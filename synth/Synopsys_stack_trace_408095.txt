@@ -1,0 +1,90 @@
+GNU gdb (GDB) Red Hat Enterprise Linux 8.2-20.el8
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Attaching to process 408095
+[New LWP 408148]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x000015554e0d8e42 in waitpid () from /lib64/libc.so.6
+Missing separate debuginfos, use: yum debuginfo-install bzip2-libs-1.0.6-27.el8_10.x86_64 dbus-glib-0.110-2.el8.x86_64 dbus-libs-1.12.8-26.el8.x86_64 expat-2.2.5-16.el8_10.x86_64 flac-libs-1.3.2-9.el8_8.1.x86_64 glib2-2.56.4-165.el8_10.x86_64 glibc-2.28-251.el8_10.5.x86_64 gmp-6.1.2-11.el8.x86_64 gnutls-3.6.16-8.el8_9.3.x86_64 graphite2-1.3.10-10.el8.x86_64 gsm-1.0.17-5.el8.x86_64 keyutils-libs-1.5.10-9.el8.x86_64 krb5-libs-1.18.2-30.el8_10.x86_64 libICE-1.0.9-15.el8.x86_64 libSM-1.2.3-1.el8.x86_64 libX11-1.6.8-9.el8_10.x86_64 libX11-xcb-1.6.8-9.el8_10.x86_64 libXcomposite-0.4.4-14.el8.x86_64 libXext-1.3.4-1.el8.x86_64 libXft-2.3.3-1.el8.x86_64 libXi-1.7.10-1.el8.x86_64 libXrandr-1.5.2-1.el8.x86_64 libXrender-0.9.10-7.el8.x86_64 libXtst-1.2.3-7.el8.x86_64 libasyncns-0.8-14.el8.x86_64 libcap-2.48-6.el8_9.x86_64 libcom_err-1.45.6-5.el8.x86_64 libgcrypt-1.8.5-7.el8_6.x86_64 libglvnd-glx-1.3.4-2.el8.x86_64 libgpg-error-1.31-1.el8.x86_64 libmount-2.32.1-46.el8.x86_64 libogg-1.3.2-10.el8.x86_64 libselinux-2.9-8.el8.x86_64 libsndfile-1.0.28-14.el8.x86_64 libtasn1-4.13-4.el8_7.x86_64 libuuid-2.32.1-46.el8.x86_64 libxcb-1.13.1-1.el8.x86_64 lz4-libs-1.8.3-3.el8_4.x86_64 nettle-3.4.1-7.el8.x86_64 openssl-libs-1.1.1k-14.el8_6.x86_64 pcre-8.42-6.el8.x86_64 pulseaudio-libs-14.0-4.el8.x86_64 pulseaudio-libs-glib2-14.0-4.el8.x86_64 sqlite-libs-3.26.0-19.el8_9.x86_64 sssd-client-2.9.4-4.el8_10.x86_64 systemd-libs-239-82.el8_10.2.x86_64
+(gdb) (gdb) 
+Thread 2 (Thread 0x1555344ac700 (LWP 408148)):
+#0  0x000015554e1061ff in select () at /lib64/libc.so.6
+#1  0x0000000012449596 in SNPSee_554ec7c90557bab679d871cd58526530 ()
+#2  0x0000000013ee6749 in SNPSee_d9c72da67e7a1f57e9891545cd875e2719332304182309de ()
+#3  0x00001555515011ca in start_thread () at /lib64/libpthread.so.0
+#4  0x000015554e00a8d3 in clone () at /lib64/libc.so.6
+
+Thread 1 (Thread 0x1555423914c0 (LWP 408095)):
+#0  0x000015554e0d8e42 in waitpid () at /lib64/libc.so.6
+#1  0x000015554e02c747 in do_system () at /lib64/libc.so.6
+#2  0x0000000013f77eed in SNPSee_4f1eca636f186904 ()
+#3  0x0000000013ee8875 in SNPSee_216f3c2f4c55dbceb170dcb7639b9c2cdd496024a8e266b98132685c735317487fd2aa296d8a7317 ()
+#4  0x0000000013eea27a in SNPSee_216f3c2f4c55dbceb170dcb7639b9c2cdd496024a8e266b98132685c73531748e1eb9162e9fd7182 ()
+#5  0x0000000000d8ff8a in SNPSee_f1ee00d2049be34bc9fa2aabd0709c661b77ea09a2cd7785 ()
+#6  0x000000000a8a6975 in SNPSee_b0111077a1564ec2f03c23d0bb102089cced107fffe7abc9 ()
+#7  0x000000000a8a7295 in SNPSee_616b6e047c741ff1baf571efe85d3536eac68d027a1be0e0030a066449e92897 ()
+#8  0x000000000a8a6dad in SNPSee_b5b74bb29e23928e271a046254d5c62e ()
+#9  0x000015555150bd10 in <signal handler called> () at /lib64/libpthread.so.0
+#10 0x000000000a8a42be in SNPSee_2eb3f37b65aad7647bf3a0a472d2cfb9 ()
+#11 0x000000000a8a2984 in SNPSee_c6ec28a863b1a054d4bd89933e7bbe1c0637c7f0c175232b ()
+#12 0x00000000041ec9bf in SNPSee_03b8209cd57791c2e3c1f03725bdef917ea1c86fd2f363eb3e8be1c4629686ad ()
+#13 0x000000000423a97f in SNPSee_c2a9dfd538a0bdbbe8421489af679ad3d64b2e81554f8378 ()
+#14 0x0000000008418815 in SNPSee_598996e60acb6396f8e330aad2bb13fc854f85730364818b95128ff6e80889f1 ()
+#15 0x0000000008419931 in SNPSee_d13c1a387e038901bac0c5b29fe43f15 ()
+#16 0x0000000008419f08 in SNPSee_a54f6940385a3a21 ()
+#17 0x000000000841a012 in SNPSee_1fc1e2c2a76c3d9bef7e368e4d5dedb81c41073de1dd9976d0f077b5afa40906 ()
+#18 0x000000000841aa37 in SNPSee_1fc1e2c2a76c3d9bef7e368e4d5dedb857ce3bc85cb4c2b9 ()
+#19 0x00000000083e30c6 in SNPSee_62f6ee9c38238b3a697e355de7f766fb60e8f21519170677 ()
+#20 0x00000000083de2d4 in SNPSee_c764ce558144e4c8c80289e87245416423adfc6940b31732 ()
+#21 0x00000000083e06cb in SNPSee_28cce82b67bf015fb5a6c9e1b3dc13af ()
+#22 0x00000000083e5ce6 in SNPSee_7334a3b4b9d74fc526d0f4be30a219002f202e8b5bae55046db63eed6fa62cd8 ()
+#23 0x00000000083e6515 in SNPSee_3522a4512f3434fa6846ffafb6a0956c9c8547669c8c469a ()
+#24 0x000000000814d93e in SNPSee_4a5a1651eddfc25e7eed82f02078f85ba0c67c190d6b8095 ()
+#25 0x000000000814e957 in SNPSee_4a5a1651eddfc25e7eed82f02078f85b95acf2ba1ece31c8 ()
+#26 0x0000000003cc31e3 in SNPSee_105035888c058882c6257352139d6c85 ()
+#27 0x0000000003c467e6 in SNPSee_91e939537e520619b02b24297a60ca5a ()
+#28 0x0000000003c4dd53 in SNPSee_c0e751d30aa20b457b9c27f7a6b861601b575728e739cc34 ()
+#29 0x0000000003c4fc06 in SNPSee_a38b227dfbddfaa0f81c8d4be60b1d30 ()
+#30 0x0000000003c500ee in SNPSee_a38b227dfbddfaa05078a7bcdd36c3968bcbd2b1750c3d71 ()
+#31 0x0000000003c513ee in SNPSee_a38b227dfbddfaa0ab8db87583d2840756b8663053fe5155 ()
+#32 0x0000000003c68341 in SNPSee_c0e751d30aa20b45684bdc5b2846d4f3 ()
+#33 0x0000000003c6b066 in SNPSee_f1a7bdbcb18468a93185207bba98c88b81ea241e6fd6e18e ()
+#34 0x00000000036bca03 in SNPSee_491529b53ce409253333d38c1284bc7c02bed1d340622c72280c34dc4b711545 ()
+#35 0x000000000356d8ac in SNPSee_800cfa09c4312a2a658022cd459e34616900e8f99890a5ed ()
+#36 0x00000000135351f5 in SNPSee_7ea007f17721baa8c52712154029f5e48c5b42d17487296853bec6f509fb5cd7fb8e3aecaf9a59df5ceaf3227abcdf276664c5bfd5ca6b006d34e6f6d0022bb5aa6a0546020548c042f868058edbb564 ()
+#37 0x0000000012dc00de in SNPSee_18ae1188a5a6482452f3b67abbc891010269f13ce0e30d67 ()
+#38 0x000000001419bf7c in SNPSee_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d ()
+#39 0x00000000141a0f8a in SNPSee_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790 ()
+#40 0x00000000141a2c6f in SNPSee_a00aeeb47fd325df3eff4946e57739a1 ()
+#41 0x0000000012dde006 in SNPSee_5b9e0c983f97901fa4e0af164abe7efeb24c5f4c6136879c869b2b88ca4e26329cbb10d1a609855d ()
+#42 0x0000000012d9a3a9 in SNPSee_59511b0144537c36c6614840eb25b067 ()
+#43 0x0000000012dabe4f in SNPSee_dfcfd18c870f576645dec230cc55940481eea9a4962927b3b2419a5f9f3803d6e6d6151e8a6657b75c63db485ae230e97b8a0dd27c2cdfedd6e7ab8b3504080f ()
+#44 0x0000000012dc00de in SNPSee_18ae1188a5a6482452f3b67abbc891010269f13ce0e30d67 ()
+#45 0x000000001419bf7c in SNPSee_57415c5b07ec5e8b8118f96e6212a2c42c69fd3f49376c0d ()
+#46 0x00000000141a0f8a in SNPSee_1ac40924fdff8310f5184d6eb67c5798036a89169a27d790 ()
+#47 0x0000000012dbaf61 in SNPSee_eb883b8643ac3618e46fbd7d90d84cd1d9cf41f1ea1de2433ad64196cf3fcc2ce0cf4135a98ecf06 ()
+#48 0x0000000012dbd748 in SNPSee_c9aef8ff45700e7498f09e7fe7ec58c036cd580d7ddf92c3 ()
+#49 0x00000000030c4f97 in SNPSee_d188ae5ca31ec51f7cba18dffac171b0221ec425774837558df4ddc3322fc732e06cbd83d58883e1 ()
+#50 0x00000000030d0782 in SNPSee_3221a15a6f1a35304e1e2a6725c055e64954ed411c02b8fea588b35e0540b178b78986c80d1d5eb53d84afadfe38b7c2 ()
+#51 0x00000000030d096f in SNPSee_3221a15a6f1a3530a06e6740411df9e026698cb37d965801c2f87fce0f07c0f8 ()
+#52 0x00000000030d1087 in SNPSee_76d6cca1ef29382ca84b036280d53dca ()
+#53 0x0000000000d948fd in SNPSee_a8c67c391924da59bb0a6e836c77e2d8 ()
+#54 0x0000000000c990e6 in SNPSee_5a24f30b88271223 ()
+#55 0x000015554e00b7e5 in __libc_start_main () at /lib64/libc.so.6
+#56 0x0000000000d8de3e in SNPSee_d06eed713327be76 ()
+(gdb) Detaching from program: /opt/caen/synopsys-n/n/synopsys-synth-2023.12-SP5/linux64/syn/bin/common_shell_exec, process 408095
+[Inferior 1 (process 408095) detached]
+(gdb) 
