@@ -1,6 +1,6 @@
 ### Project
 
-This project was a group effort - 6 individual contributors worked to create a RISC-V R10K processor. Equipped with register renaming, data and hazard handling, 
+This project was a group effort with 6 individual contributors developing in Verilog. We worked together to create a RISC-V R10K processor with register renaming and equipped to handle data and structural hazards.
 
 We also built in several advanced features: n-way superscalar, early branch resolution, branch prediction using GShare, instruction cache, instruction prefetching, and data cache. 
 
