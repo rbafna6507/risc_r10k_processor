@@ -1,6 +1,6 @@
 ### Project
 
-You'll want to checkout /verilog/cpu.sv - everything else is modules we built from scratch to use inside our cpu.
+You'll want to checkout `/verilog/cpu.sv` - everything else is modules we built from scratch to use inside our cpu.
 
 This project was a group effort with 6 individual contributors developing in Verilog. We worked together to create a RISC-V R10K processor with register renaming and equipped to handle data and structural hazards.
 
